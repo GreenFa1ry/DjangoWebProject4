@@ -1,0 +1,33 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<h2>Полезные ресурсы</h2>
+
+
+
+<h3>Связанные по тематике сайты</h3>
+
+<br />
+
+<ul class="row list-unstyled list">
+    <li class="col-md-4">
+        <a href="https://www.python.org/">
+            <img src="{% static 'app/content/python.png'%} " width="100" height="111" alt="python" />
+        </a>
+    </li>
+    <li class="col-md-4">
+        <a href="https://djangobook.com/">
+            <img src="{% static 'app/content/django.png'%} " width="100" height="111" alt="django" />
+        </a>
+    </li>
+    <li class="col-md-4">
+        <a href="https://learn.javascript.ru/">
+            <img src="{% static 'app/content/js.png'%} " width="100" height="111" alt="js" />
+        </a>
+    </li>
+</ul>
+
+{% endblock %}
